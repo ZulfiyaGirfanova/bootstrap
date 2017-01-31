@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+	<form>
+		<input type="text" id="Name">
+		<label for="Name">Имя</label>
+	</form>
+	<form>
+		<input type="text" id="Surname">
+		<label for="Surname">Фамилия</label>
+	</form>
+		<button type="button" onclick="myFunction()" class="btn btn-success">Пуск</button>
+	<div id="demo1"></div>
+	<!--<div id="demo2"></div>-->
+		<script>
+			function myFunction() {
+				var name = document.getElementById("Name").value;
+				var surname = document.getElementById("Surname").value;
+			console.log(name + "\n" + surname);
+			document.getElementById("demo1").innerHTML= name + " <br> " + surname;
+			//document.getElementById("demo2").innerHTML= surname;
+		}
+		</script>
+</body>
+</html>

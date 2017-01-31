@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>switch-exs</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+<form>
+	<input type="number" id="ageinput">
+	<button onclick="myFunction()" type="button" class="btn btn-primary">Пуск</button>
+</form>
+<div id="content">
+	
+</div>
+	<script>
+	function myFunction() {
+		var age = document.getElementById("ageinput").value; 
+		age = parseInt(age);
+		console.log(age);
+		var msg = "";
+
+		switch (age) {
+			case 2:
+			msg = "младенец";
+			break;
+			case 6:
+			msg = "ходит в садик";
+			break;
+			case 9:
+			msg = "школьник";
+			break;
+			case 17:
+			msg = "студент";
+			break;
+			case 25:
+			msg = "рабочий"
+			break;
+		}
+		console.log(msg);
+		document.getElementById("content").innerHTML += " <br> Ты хороший " + msg;
+	}
+
+	//myFunction();
+	</script>
+
+</html>
